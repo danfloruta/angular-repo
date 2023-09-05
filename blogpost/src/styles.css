@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+.active{
+    background-color: rgb(44, 27, 201);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

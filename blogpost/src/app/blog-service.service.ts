@@ -1,0 +1,11 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class BlogServiceService {
+
+  constructor() { }
+
+  blogList: any[] = [{id: 0, title: 'Chilli con Carne', author: 'John Doe', publishDate: '06-05-2023', summary: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni modi debitis corrupti exercitationem deleniti vel, quisquam rerum, repellendus eum, repudiandae doloremque! Libero molestias quisquam molestiae! Suscipit deserunt nihil cum quas fugit debitis velit eos voluptatum laudantium reiciendis vel voluptate sit tenetur pariatur exercitationem expedita distinctio dolores ipsam odit, quis beatae.', comments: []}, {id: 1, title: 'Vegan Ice Cream', author: 'Jane Doe', publishDate: '07-07-2023', summary: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni modi debitis corrupti exercitationem deleniti vel, quisquam rerum, repellendus eum, repudiandae doloremque! Libero molestias quisquam molestiae! Suscipit deserunt nihil cum quas fugit debitis velit eos voluptatum laudantium reiciendis vel voluptate sit tenetur pariatur exercitationem expedita distinctio dolores ipsam odit, quis beatae.', comments: []}, {id: 2, title: 'Spaghetti Arrabiata', author: 'Ms. Chanandeler Bong', publishDate: '09-05-1994', summary: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni modi debitis corrupti exercitationem deleniti vel, quisquam rerum, repellendus eum, repudiandae doloremque! Libero molestias quisquam molestiae! Suscipit deserunt nihil cum quas fugit debitis velit eos voluptatum laudantium reiciendis vel voluptate sit tenetur pariatur exercitationem expedita distinctio dolores ipsam odit, quis beatae.', comments: []}, {id: 3, title: 'Pizza Hawaii', author: 'Johnny Saint', publishDate: '01-05-2000', summary: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni modi debitis corrupti exercitationem deleniti vel, quisquam rerum, repellendus eum, repudiandae doloremque! Libero molestias quisquam molestiae! Suscipit deserunt nihil cum quas fugit debitis velit eos voluptatum laudantium reiciendis vel voluptate sit tenetur pariatur exercitationem expedita distinctio dolores ipsam odit, quis beatae.', comments: []},];
+}

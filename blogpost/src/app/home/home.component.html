@@ -1,0 +1,10 @@
+<div class="container d-flex flex-wrap flex-column gap-4 justify-content-center">
+<div>
+        <input type="text" [(ngModel)]="searchItem" placeholder="Search post...">
+        <button class="btn btn-primary" (click)="searchPost()">Search</button>
+</div>
+<div class=" container d-flex flex-wrap gap-4 justify-content-center">
+<app-card-blog class="w-25" [routerLink]="'/details/' + blog.id" *ngFor="let blog of copyBlogs | paginate: { itemsPerPage: 3, currentPage: p }" [blog]="blog"></app-card-blog>
+</div>
+<pagination-controls class="mx-auto" (pageChange)="p = $event"></pagination-controls>
+</div>

@@ -1,0 +1,25 @@
+<div>
+    <!-- <div>
+        <button class="btn btn-success" (click)="showAllTasks()">All Tasks</button>
+        <button class="btn btn-primary" (click)="showFinishedTasks()">Finished</button>
+        <button class="btn btn-warning" (click)="showActiveTasks()">Active</button>
+    </div> -->
+    <button class="btn btn-success" (click)="sortListName()">Sort</button>
+    <div *ngFor="let task of listOfTasks">
+    <p>{{task.name}} / {{task.description}}</p>
+    <button class="btn btn-danger" (click)="onDelete(task.id)">Delete</button>
+    <input type="checkbox" name="" id="" (change)="task.checked = !task.checked">
+    </div>
+    <p>{{totalTasks}}</p>
+    <p>{{completedTasks}}</p>
+    <!-- <div *ngIf="activeList">
+        <div *ngFor="let task of copyTasks">
+            <p>{{task.name}} / {{task.description}}</p>
+        </div>
+    </div>
+    <div *ngIf="finishedList">
+        <div *ngFor="let task of copyTasks">
+            <p>{{task.name}} / {{task.description}}</p>
+        </div>
+    </div> -->
+</div>
